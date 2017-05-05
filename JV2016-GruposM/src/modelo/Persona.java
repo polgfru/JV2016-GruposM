@@ -130,7 +130,7 @@ public  abstract class Persona implements Serializable, Cloneable {
 	 * @return true si cumple.
 	 */
 	private boolean fechaNacimientoCoherente(Fecha fechaNacimiento) {
-		Fecha fechaActual = util.Fecha.Fecha();
+		Fecha fechaActual = new Fecha();
 		if (fechaNacimiento.compareTo(fechaActual.addAños(-18))) {
 			return true;
 		}
